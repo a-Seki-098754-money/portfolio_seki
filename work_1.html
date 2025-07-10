@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>シューティングゲームの紹介</title>
+    <!-- リセットCSS -->
+    <link rel="stylesheet" href="https://unpkg.com/modern-css-reset/dist/reset.min.css" />
+    <!-- webフォントの設定 -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Hachi+Maru+Pop&family=Hina+Mincho&family=Yomogi&family=Zen+Old+Mincho&display=swap"
+        rel="stylesheet">
+    <!-- cssをリンクづける -->
+    <link rel="stylesheet" href="work_1.css">
+    <!-- <link rel="stylesheet" href="top_style.css"> -->
+    <!-- ファビコン入れる -->
+    <link rel="icon" href="img/favicon.ico">
+</head>
+
+<body>
+    <!-- トップページのハンバーガーメニュー -->
+    <div class="hamburger-menu">
+        <label for="menu-btn-check" class="menu-btn"><span></span></label>
+        <div class="menu-content">
+            <ul>
+                <li><a href="top.html">Top</a></li>
+                <li><a href="anthology.html">Anthology</a></li>
+                <li><a href="work_2.html">Work_2</a></li>
+                <li><a href="work_3.html">Work_3</a></li>
+                <li><a href="work_4.html">Work_4</a></li>
+                <li><a href="work_5.html">Work_5</a></li>
+                <li><a href="photo.html">Photo</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="title">
+        <img src="img/ゲームウォッチ的なアイコン.png" alt="">
+        <h1>シューティングゲームの紹介</h1>
+    </div>
+    <div class="video">
+        <h2>実行動画</h2>
+        <video controls id="work1" src="video/シューティングゲーム.mp4"></video>
+    </div>
+    <div class="wrap">
+        <div class="container">
+            <div>
+                <h2>タイトル</h2>
+                <p>動物シューティングゲーム</p>
+                <p>Pythonのtkinterの授業の中間課題として作成しました。</p>
+            </div>
+            <div>
+                <h2>力を入れた点</h2>
+                <p>シューティングゲームだけではつまらないかと思ったので、動物のイラストを障害物の後ろにかくしてその動物の名前を下の欄にタイピングで答えさせる形式にしました。
+                    1問だけだと味気ないかと思ったので3問用意して、それぞれの背景色等の変更をしました。
+                    複数いる敵からランダムに弾が照射される部分を工夫しました。あたり判定の関数を作るのが難しかったです。
+                    折角なので弾を発射するときやボタンを押したときの音も付けました。
+                </p>
+            </div>
+            <div>
+                <h2>改善したい点</h2>
+                <p>
+                    一定時間が経過すると処理落ちしてしまい、敵陣からの弾が切れてしまうのを改善したいです。また動物の位置をランダムに出現させたり、日本語でのタイピング入力でも正解・不正解の表示が出るようにしたいです。
+                </p>
+            </div>
+            <div>
+                <h2>フレームワーク</h2>
+                <p>Python tkinter</p>
+            </div>
+        </div>
+    </div>
+    <!-- ページtopに戻るボタン -->
+    <div id="page_top">
+        <a href="#" class="back-to-top"><img src="img/花びらwork_1.png" alt="トップに戻る"></a>
+        <p>page_top</p>
+    </div>
+    <script src="menu.js"></script>
+</body>
+
+</html>

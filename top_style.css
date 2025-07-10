@@ -1,0 +1,205 @@
+@charset "utf-8";
+
+/* フォント設定 */
+body {
+    font-family: "Hina Mincho", serif;
+    margin: 0;
+    padding: 0;
+    background-image: url(img/ぱくたそ.jpg);
+    background-repeat: no-repeat;
+    background-position: fixed;
+    background-size: cover;
+}
+
+body::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    pointer-events: none;
+    z-index: 10;
+    background: radial-gradient(circle at center, transparent 40%, rgba(0, 0, 0, 0.7) 100%);
+}
+
+
+/* ハンバーガーボタン */
+.menu-btn {
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 60px;
+    width: 60px;
+    background-color: #1a1e3f;
+    z-index: 100;
+    cursor: pointer;
+}
+
+/* 三本線の描画 */
+.menu-btn span,
+.menu-btn span::before,
+.menu-btn span::after {
+    content: '';
+    display: block;
+    height: 3px;
+    width: 25px;
+    background-color: #ffc0cb;
+    border-radius: 3px;
+    position: absolute;
+    transition: all 0.3s ease;
+}
+
+.menu-btn span {
+    position: relative;
+}
+
+.menu-btn span::before {
+    position: absolute;
+    bottom: 8px;
+}
+
+.menu-btn span::after {
+    position: absolute;
+    top: 8px;
+}
+
+/* メニュー本体 */
+.menu-content {
+    width: 33.3333%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 100%;
+    /* 初期状態：画面外 */
+    z-index: 80;
+    background-color: #1a1e3f;
+    /* 暗い藍色 */
+    transition: all 0.5s ease;
+    overflow-y: auto;
+}
+
+.menu-content.open {
+    left: 66.6667%;
+    /* 画面右端から1/3にスライドイン */
+}
+
+.menu-content ul {
+    padding: 80px 20px 0;
+    margin: 0;
+}
+
+.menu-content ul li {
+    list-style: none;
+    border-bottom: solid 1px #cc0033;
+}
+
+.menu-content ul li a {
+    display: block;
+    font-size: 24px;
+    padding: 12px 10px;
+    color: #cc0033;
+    text-decoration: none;
+    position: relative;
+}
+
+/* 矢印 */
+.menu-content ul li a::before {
+    content: "";
+    width: 7px;
+    height: 7px;
+    border-top: solid 2px #cc0033;
+    border-right: solid 2px #cc0033;
+    transform: rotate(45deg);
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%) rotate(45deg);
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 410px;
+    text-align: center;
+    position: relative;
+    z-index: 10;
+}
+
+header h1 {
+    font-size: 60px;
+    color: #ffffff;
+    margin: 0;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+}
+
+.menu {
+    color: #ffffff;
+}
+
+/* メニュー非表示時はクリック無効に */
+.menu-content {
+    pointer-events: none;
+}
+
+.menu-content.open {
+    pointer-events: auto;
+}
+
+#shadow-effect {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    pointer-events: none;
+    z-index: 10;
+    background: radial-gradient(circle at center, transparent 50%, rgba(0, 0, 0, 0.7) 100%);
+    transition: background-position 0.2s ease;
+}
+
+footer {
+    background-color: #1a1e3f;
+    display: flex;
+    color: #ffc0cb;
+    font-size: 30px;
+    text-decoration: none;
+    padding-left: 10%;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+footer a {
+    text-decoration: none;
+    color: #ffc0cb;
+}
+
+.menu {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    padding: 1rem;
+    /* 半透明の背景 */
+    background-color: rgba(57, 38, 97, 0.6);
+    position: relative;
+    z-index: 20;
+    font-size: 20px;
+}
+
+.menu a {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+    font-size: 25px;
+    padding: 10px;
+}
+
+.menu a:hover {
+    color: #ffc0cb;
+}

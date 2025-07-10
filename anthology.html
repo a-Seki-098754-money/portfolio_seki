@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anthology Portfolio</title>
+    <!-- リセットCSS -->
+    <link rel="stylesheet" href="https://unpkg.com/modern-css-reset/dist/reset.min.css" />
+    <!-- webフォントの設定 -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Hachi+Maru+Pop&family=Hina+Mincho&family=Yomogi&family=Zen+Old+Mincho&display=swap"
+        rel="stylesheet">
+    <!-- cssをリンクづける -->
+    <link rel="stylesheet" href="anthology.css">
+    <!-- ファビコン入れる -->
+    <link rel="icon" href="img/favicon.ico">
+</head>
+
+<body>
+    <!-- トップページのハンバーガーメニュー -->
+    <div class="hamburger-menu">
+        <label for="menu-btn-check" class="menu-btn"><span></span></label>
+        <div class="menu-content">
+            <ul>
+                <li><a href="top.html">Top</a></li>
+                <li><a href="about.html">About</a></li>
+                <!-- <li><a href="work_1.html">Work_1</a></li> -->
+                <li><a href="photo.html">Photo</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- タイトル -->
+    <div class="title">
+        <h1>Anthology</h1>
+        <img src="img/毬のアイコン.png" alt="作品集のアイコン">
+    </div>
+
+
+    <div class="works-grid">
+        <div class="card">
+            <a href="work_1.html"><img class="work_icon" src="img/ゲームウォッチ的なアイコン.png" alt="ゲームイベント紹介サイト"></a>
+            <p>pythonのtkinterで作成しました。</p>
+            <p>シューティングゲームを作りました。</p>
+        </div>
+        <div class="card">
+            <a href="work_2.html"><img src="img/雪の結晶アイコン1.png" alt="tkinterシューティングゲーム"></a>
+            <p>pythonのtkinterで作成しました。</p>
+            <p>図書管理アプリを作成しました。</p>
+        </div>
+        <div class="card">
+            <a href="work_3.html"><img src="img/雪の結晶アイコン1.png" alt="tkinter図書管理アプリ"></a>
+            <p>授業で作成したポートフォリオです。</p>
+            <p>今まで作った作品をまとめました</p>
+        </div>
+        <div class="card">
+            <a href="work_4.html"><img src="img/雪の結晶アイコン1.png" alt="ポートフォリオ"></a>
+            <div class="hover">
+                <p>ハッカソンで作成したタスク管理アプリです。</p>
+                <p>pythonのtkinterで作成しました。</p>
+            </div>
+        </div>
+        <div class="card">
+            <a href="work_5.html"><img src="img/雪の結晶アイコン1.png" alt="ハッカソンタスク管理アプリ"></a>
+            <p>ホテルの予約管理アプリです</p>
+            <p>チーム開発の演習で作りました</p>
+        </div>
+        <div class="card">
+            <a href="#"><img src="img/雪の結晶アイコン1.png" alt="未定"></a>
+            <p>次に作った作品を入れる予定です。</p>
+        </div>
+        </div>
+        </div>
+
+        <!-- ページtopに戻るボタン -->
+        <div id="page_top">
+            <a href="#" class="back-to-top"><img src="img/桜の花びらの無料アイコン素材.png" alt="トップに戻る"></a>
+            <p>page_top</p>
+        </div>
+        <script src="menu.js"></script>
+</body>
+
+</html>

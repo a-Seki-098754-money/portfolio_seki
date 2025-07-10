@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>図書管理アプリの紹介</title>
+    <!-- リセットCSS -->
+    <link rel="stylesheet" href="https://unpkg.com/modern-css-reset/dist/reset.min.css" />
+    <!-- webフォントの設定 -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Hachi+Maru+Pop&family=Hina+Mincho&family=Kaisei+Opti&family=M+PLUS+1:wght@100..900&family=Noto+Serif+TC:wght@200..900&family=Roboto+Slab:wght@100..900&family=Sawarabi+Mincho&family=Shippori+Mincho&family=Yomogi&family=Zen+Maru+Gothic&family=Zen+Old+Mincho&display=swap"
+        rel="stylesheet">
+    <!-- cssをリンクづける -->
+    <link rel="stylesheet" href="work_2.css">
+    <!-- ファビコン入れる -->
+    <link rel="icon" href="img/favicon.ico">
+</head>
+
+<body>
+    <!-- トップページのハンバーガーメニュー -->
+    <div class="hamburger-menu">
+        <label for="menu-btn-check" class="menu-btn"><span></span></label>
+        <div class="menu-content">
+            <ul>
+                <li><a href="top.html">Top</a></li>
+                <li><a href="anthology.html">Anthology</a></li>
+                <li><a href="work_1.html">Work_1</a></li>
+                <li><a href="work_3.html">Work_3</a></li>
+                <li><a href="work_4.html">Work_4</a></li>
+                <li><a href="work_5.html">Work_5</a></li>
+                <li><a href="photo.html">Photo</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="title">
+        <img src="img/本棚の無料アイコン 1.png" alt="">
+        <h1>図書館アプリの紹介</h1>
+    </div>
+    <div class="video">
+        <h2>実行動画</h2>
+        <video controls id="work1" src="video/図書管理アプリ.mp4"></video>
+    </div>
+    <div class="wrap">
+        <div class="container">
+            <div>
+                <h2>タイトル</h2>
+                <p>図書館アプリ</p>
+                <p>Pythonのtkinterの授業で期末課題として作りました</p>
+            </div>
+            <div>
+                <h2>力を入れた点</h2>
+                <p>ログイン機能をつけて管理者ユーザーと一般ユーザーの画面を分けるようにしました。
+                    図書の貸し借りがデータベースに反映して貸し出し中の本は借りれないようにする等の制御が大変でした。
+                    図書検索はISBNだけでなく著者名やタイトルでも検索をかけれるようにする部分が工夫した点です。
+                    ジャンルやラックのカラムも作りました。ユーザーは図書の貸し借り、検索までしかできません。
+                    管理者は新しい本を登録したり、削除したりできる機能を追加で付けました。
+                </p>
+            </div>
+            <div>
+                <h2>改善したい点</h2>
+                <p>図書の追加、削除はすべての項目が入っていないとできないので、それを部分的でもできるようにすること。貸し出しもISBN、タイトル、著者がすべて完全一致しないといけないのでその部分をタイトルだけでもできるようにしたいです。
+                    貸し出し画面での検索をISBN以外でも検索をかけたり、ソートできるようにしたいと思っています。他にもジャンルごとの人気順等でホーム画面に表示ができるような機能をつくりたいなと思いました。
+                </p>
+            </div>
+            <div>
+                <h2>フレームワーク</h2>
+                <p>Python tkinter</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- ページtopに戻るボタン -->
+    <div id="page_top">
+        <a href="#" class="back-to-top"><img src="img/桜の花びらの無料アイコン素材 (3).png" alt="トップに戻る"></a>
+        <p>page_top</p>
+    </div>
+    <script src="menu.js"></script>
+</body>
+
+</html>

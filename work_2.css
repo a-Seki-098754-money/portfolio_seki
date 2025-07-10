@@ -1,0 +1,165 @@
+@charset "utf-8";
+
+/* フォント設定 */
+
+body {
+    font-family: "Roboto Slab","Kaisei Opti",serif;
+    background-image: url(img/書籍＿洋書.webp);
+    background-repeat: no-repeat;
+    background-position: fixed;
+    background-size: cover;
+    color: #F6F1E9;
+}
+
+/* ハンバーガーメニュー */
+/* ハンバーガーボタン */
+.menu-btn {
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 60px;
+    width: 60px;
+    background-color: #D4C1A4;
+    z-index: 100;
+    cursor: pointer;
+    /* border: 2px solid #F6F1E9; */
+}
+
+/* 三本線の描画 */
+.menu-btn span,
+.menu-btn span::before,
+.menu-btn span::after {
+    content: '';
+    display: block;
+    height: 3px;
+    width: 25px;
+    background-color: #6C584C;
+    border-radius: 3px;
+    position: absolute;
+    transition: all 0.3s ease;
+}
+
+.menu-btn span {
+    position: relative;
+}
+
+.menu-btn span::before {
+    position: absolute;
+    bottom: 8px;
+}
+
+.menu-btn span::after {
+    position: absolute;
+    top: 8px;
+}
+
+/* メニュー本体 */
+.menu-content {
+    width: 33.3333%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 100%;
+    /* 初期状態：画面外 */
+    z-index: 80;
+    background-color: #D4C1A4;
+    /* 暗い藍色 */
+    transition: all 0.5s ease;
+    overflow-y: auto;
+}
+
+.menu-content.open {
+    left: 66.6667%;
+    /* 画面右端から1/3にスライドイン */
+}
+
+.menu-content ul {
+    padding: 80px 20px 0;
+    margin: 0;
+}
+
+.menu-content ul li {
+    list-style: none;
+    border-bottom: solid 1px #6C584C;
+}
+
+.menu-content ul li a {
+    display: block;
+    font-size: 24px;
+    padding: 12px 10px;
+    color: #6C584C;
+    text-decoration: none;
+    position: relative;
+}
+
+/* ハンバーガーメニュー終わり */
+
+.title {
+    display: flex;
+    margin-top: 50px;
+    margin-left: 50px;
+}
+
+.title img {
+    height: 50px;
+    margin-right: 10px;
+}
+
+.title h1 {
+    color: #D4C1A4;
+    margin-bottom: 50px;
+}
+
+h2 {
+    color: #D4C1A4;
+}
+
+.wrap {
+    margin: 50px;
+    font-size: 18px;
+}
+
+.container {
+    background-color: rgba(1, 1, 1, 0.7);
+    padding: 15px;
+}
+
+.video h2 {
+    margin-left: 0;
+}
+
+.video {
+    width: 80%;
+    /* 動画の幅を調整 */
+    margin: 0 auto;
+}
+
+.video video {
+    width: 100%;
+    /* 親要素の幅いっぱいに広げる */
+}
+
+.text-content {
+    overflow: hidden;
+    /* 回り込みを適切に処理 */
+}
+
+#page_top {
+    padding-left: 90%;
+    color: #6C584C;
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+}
+
+#page_top img {
+    width: 50px;
+    margin: 0 auto;
+}
+
+#page_top p{
+    font-weight: bold;
+}
