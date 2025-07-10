@@ -21,9 +21,10 @@ body {
     align-items: center;
     height: 60px;
     width: 60px;
-    background-color: #444;
+    background-color: #355c7d;
     z-index: 100;
     cursor: pointer;
+    border: 2px solid #fffff0;
 }
 
 /* 三本線の描画 */
@@ -63,7 +64,7 @@ body {
     left: 100%;
     /* 初期状態：画面外 */
     z-index: 80;
-    background-color: #444;
+    background-color: #355c7d;
     /* 暗い藍色 */
     transition: all 0.5s ease;
     overflow-y: auto;
@@ -130,10 +131,11 @@ h1 {
     padding: 20px;
     border-radius: 10px;
     width: 100%;
-    max-width: 300px;
+    max-width: 320px;
     text-align: center;
     box-shadow: 2px 2px 8px rgba(255, 255, 255, 0.1);
     transition: transform 0.3s ease;
+    font-size: 0.8rem;
 }
 
 .card:hover {
@@ -146,6 +148,10 @@ h1 {
     margin-bottom: 10px;
 }
 
+.card p {
+    text-align: left;
+}
+
 #page_top {
     padding-left: 90%;
     color: #fff;
@@ -156,6 +162,7 @@ h1 {
 
 #page_top img {
     width: 50px;
+    margin: 0 auto;
 }
 
 @media screen and (max-width: 900px) {
@@ -169,3 +176,4 @@ h1 {
         grid-template-columns: 1fr;
     }
 }
+

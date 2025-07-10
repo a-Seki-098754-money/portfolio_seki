@@ -95,6 +95,16 @@ body {
     position: relative;
 }
 
+.submenu {
+    padding-top: 5px;
+    padding-left: 15px;
+    font-size: 0.9rem;
+}
+
+
+.submenu li {
+    border-bottom: none;
+}
 /* ハンバーガーメニュー終わり */
 
 .title {
