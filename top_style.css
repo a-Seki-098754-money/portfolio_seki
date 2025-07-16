@@ -120,6 +120,11 @@ body::before {
     transform: translateY(-50%) rotate(45deg);
 }
 
+.work-link {
+    font-size: 10px;
+    padding-left: 20px;
+}
+
 header {
     display: flex;
     justify-content: center;

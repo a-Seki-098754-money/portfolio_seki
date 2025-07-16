@@ -94,22 +94,11 @@ body {
     position: relative;
 }
 
-.submenu {
-    display: none;
+.work-link {
+    font-size: 10px;
     padding-left: 20px;
-    margin-top: 5px;
 }
 
-.has-submenu.open .submenu {
-    display: block;
-}
-
-
-.submenu li a {
-    font-size: 18px;
-    padding: 6px 10px;
-    /* color: #f0e68c; */
-}
 /* ハンバーガーメニュー終わり */
 
 .title {
@@ -140,6 +129,8 @@ h2 {
 .container {
     background-color: rgba(1, 1, 1, 0.5);
     margin-left: 45%;
+    padding: 30px;
+    max-width: 500px;
 }
 
 .video {
@@ -178,3 +169,5 @@ h2 {
 #page_top p {
     font-weight: bold;
 }
+
+
