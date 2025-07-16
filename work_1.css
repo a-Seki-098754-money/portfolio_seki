@@ -78,7 +78,6 @@ body {
 
 .menu-content ul {
     padding: 80px 20px 0;
-    margin: 0;
 }
 
 .menu-content ul li {
@@ -96,14 +95,20 @@ body {
 }
 
 .submenu {
-    padding-top: 5px;
-    padding-left: 15px;
-    font-size: 0.9rem;
+    display: none;
+    padding-left: 20px;
+    margin-top: 5px;
+}
+
+.has-submenu.open .submenu {
+    display: block;
 }
 
 
-.submenu li {
-    border-bottom: none;
+.submenu li a {
+    font-size: 18px;
+    padding: 6px 10px;
+    /* color: #f0e68c; */
 }
 /* ハンバーガーメニュー終わり */
 

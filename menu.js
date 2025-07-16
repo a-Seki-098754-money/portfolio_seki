@@ -54,3 +54,13 @@ window.addEventListener( 'DOMContentLoaded', () => {
         myVideo.currentTime = 0;
     } );
 } );
+
+document.addEventListener("DOMContentLoaded", function () {
+    const toggleLink = document.querySelector(".toggle-submenu");
+    const parentLi = toggleLink.closest(".has-submenu");
+
+    toggleLink.addEventListener("click", function (e) {
+        e.preventDefault(); // aタグの遷移防止
+        parentLi.classList.toggle("open");
+    });
+});
