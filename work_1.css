@@ -121,6 +121,10 @@ h2 {
     color: #f0e68c;
 }
 
+.video h2 {
+    padding-top: 14px;
+}
+
 .wrap {
     margin: 50px;
     font-size: 18px;
@@ -128,7 +132,7 @@ h2 {
 
 .container {
     background-color: rgba(1, 1, 1, 0.5);
-    margin-left: 45%;
+    margin-left: 50%;
     padding: 30px;
     max-width: 500px;
 }
