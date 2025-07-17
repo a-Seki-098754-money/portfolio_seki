@@ -137,6 +137,10 @@ h2 {
     max-width: 500px;
 }
 
+div {
+    padding: 10px;
+}
+
 .video {
     float: left;
     /* 動画を左側に配置 */
@@ -173,5 +177,3 @@ h2 {
 #page_top p {
     font-weight: bold;
 }
-
-
