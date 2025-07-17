@@ -96,6 +96,10 @@ body {
     position: relative;
 }
 
+.work-link {
+    font-size: 10px;
+    padding-left: 20px;
+}
 /* ハンバーガーメニュー終わり */
 
 .title {
@@ -127,6 +131,7 @@ h2 {
 .container {
     padding: 30px;
     background-color: rgba(255, 255, 255, 0.3);
+    padding: 30px;
 }
 
 .video h2 {

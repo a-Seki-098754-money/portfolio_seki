@@ -94,6 +94,11 @@ body {
     position: relative;
 }
 
+.work-link {
+    font-size: 10px;
+    padding-left: 20px;
+}
+
 /* ハンバーガーメニュー終わり */
 
 .title {
@@ -146,8 +151,9 @@ h2 {
 }
 
 .img h2 {
-    padding-top: 50px;
+    padding-top: 8px;
 }
+
 .text-content {
     overflow: hidden;
     /* 回り込みを適切に処理 */
