@@ -177,3 +177,75 @@ div {
 #page_top p {
     font-weight: bold;
 }
+
+@media screen and (max-width: 768px) {
+
+    .menu-content {
+        width: 80%;
+        left: 100%;
+    }
+
+    .menu-content.open {
+        left: 20%;
+    }
+
+    .menu-content ul {
+        padding: 60px 10px 0;
+    }
+
+    .menu-content ul li a {
+        font-size: 18px;
+        padding: 10px;
+    }
+
+    body {
+        font-size: 14px;
+        line-height: 1.7;
+        margin: 0;
+        padding: 0;
+    }
+
+    .title {
+        flex-direction: column;
+        margin: 20px;
+    }
+
+    .title img {
+        width: 40px;
+        margin-bottom: 10px;
+    }
+
+    .wrap {
+        margin: 5px auto;
+    }
+
+    .container {
+        margin: 10px auto;
+        padding: 20px;
+        width: 90%;
+    }
+
+    .video {
+        float: none;
+        width: 100%;
+        margin: 0 auto 20px auto;
+    }
+
+    .text-content {
+        overflow: visible;
+    }
+
+    h1,
+    h2 {
+        font-size: 1.2rem;
+    }
+
+    #page_top {
+        right: 10px;
+        bottom: 10px;
+    }
+
+    #page_top img {
+        width: 40px;
+    }
+}

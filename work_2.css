@@ -3,7 +3,7 @@
 /* フォント設定 */
 
 body {
-    font-family: "Roboto Slab","Kaisei Opti",serif;
+    font-family: "Roboto Slab", "Kaisei Opti", serif;
     background-image: url(img/western_books.webp);
     background-repeat: no-repeat;
     background-position: fixed;
@@ -165,6 +165,71 @@ div {
     margin: 0 auto;
 }
 
-#page_top p{
+#page_top p {
     font-weight: bold;
+}
+
+/* ===== スマホ対応：レスポンシブ調整 ===== */
+@media screen and (max-width: 768px) {
+    .menu-content {
+        width: 80%;
+        left: 100%;
+    }
+
+    .menu-content.open {
+        left: 20%;
+    }
+
+    .menu-content ul {
+        padding: 60px 10px 0;
+    }
+
+    .menu-content ul li a {
+        font-size: 18px;
+        padding: 10px;
+    }
+
+    .title {
+        flex-direction: column;
+        align-items: flex-start;
+        margin: 30px 20px 0;
+    }
+
+    .title img {
+        height: 40px;
+        margin-bottom: 10px;
+    }
+
+    .title h1 {
+        font-size: 20px;
+        margin-bottom: 20px;
+    }
+
+    .wrap {
+        margin: 20px;
+        font-size: 16px;
+    }
+
+    .video {
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    .container {
+        padding: 20px;
+    }
+
+    #page_top {
+        padding-left: 0;
+        right: 10px;
+        bottom: 10px;
+    }
+
+    #page_top img {
+        width: 40px;
+    }
+
+    #page_top p {
+        font-size: 12px;
+    }
 }

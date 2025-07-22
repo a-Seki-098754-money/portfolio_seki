@@ -156,7 +156,7 @@ h2 {
 
 .img h2 {
     padding-top: 8px;
-    padding-left:8px;
+    padding-left: 8px;
 }
 
 .text-content {
@@ -179,4 +179,84 @@ h2 {
 
 #page_top p {
     font-weight: bold;
+}
+
+@media screen and (max-width: 768px) {
+
+    /* ハンバーガーメニュー */
+    .menu-content {
+        width: 80%;
+        left: 100%;
+    }
+
+    .menu-content.open {
+        left: 20%;
+    }
+
+    .menu-content ul {
+        padding: 60px 10px 0;
+    }
+
+    .menu-content ul li a {
+        font-size: 18px;
+        padding: 10px;
+    }
+
+    .work-link {
+        font-size: 12px;
+        padding-left: 10px;
+    }
+
+    /* タイトル部分 */
+    .title {
+        flex-direction: column;
+        align-items: flex-start;
+        margin: 30px 20px 0;
+    }
+
+    .title img {
+        height: 40px;
+        margin-bottom: 10px;
+    }
+
+    .title h1 {
+        font-size: 20px;
+        margin-bottom: 20px;
+    }
+
+    /* メインレイアウト調整 */
+    .img {
+        float: none;
+        width: 100%;
+        margin: 0 auto 20px;
+    }
+
+    .img h2 {
+        padding-left: 0;
+    }
+
+    .wrap {
+        margin: 20px;
+        font-size: 16px;
+    }
+
+    .container {
+        margin-left: 0;
+        padding: 20px;
+    }
+
+    /* トップへ戻るボタン */
+    #page_top {
+        padding-left: 0;
+        right: 10px;
+        bottom: 10px;
+    }
+
+    #page_top img {
+        width: 40px;
+    }
+
+    #page_top p {
+        font-size: 12px;
+    }
 }
