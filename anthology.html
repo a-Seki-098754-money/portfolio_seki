@@ -21,71 +21,106 @@
 
 <body>
     <!-- トップページのハンバーガーメニュー -->
-    <div class="hamburger-menu">
-        <label for="menu-btn-check" class="menu-btn"><span></span></label>
-        <div class="menu-content">
-            <ul>
-                <li><a href="index.html">Top</a></li>
-                <li><a href="about.html">About</a></li>
-                <li class="work-link"><a href="work_1.html">-Work_1</a></li>
-                <li class="work-link"><a href="work_2.html">-Work_2</a></li>
-                <li class="work-link"><a href="work_3.html">-Work_3</a></li>
-                <li class="work-link"><a href="work_4.html">-Work_4</a></li>
-                <li class="work-link"><a href="work_5.html">-Work_5</a></li>
-                <!-- <li><a href="photo.html">Photo</a></li> -->
-            </ul>
-        </div>
-    </div>
+    <!-- 省略: <head>など -->
 
-    <!-- タイトル -->
-    <div class="title">
-        <img src="img/sunrize.png" alt="作品集のアイコン">
-        <h1>Anthology</h1>
-    </div>
+    <body>
+        <!-- ハンバーガーメニュー -->
+        <div class="hamburger-menu">
+            <label for="menu-btn-check" class="menu-btn"><span></span></label>
+            <div class="menu-content">
+                <ul>
+                    <li><a href="index.html">Top</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li class="work-link"><a href="work_1.html">-Work_1</a></li>
+                    <li class="work-link"><a href="work_2.html">-Work_2</a></li>
+                    <li class="work-link"><a href="work_3.html">-Work_3</a></li>
+                    <li class="work-link"><a href="work_4.html">-Work_4</a></li>
+                    <li class="work-link"><a href="work_5.html">-Work_5</a></li>
+                </ul>
+            </div>
+        </div>
 
+        <!-- タイトル -->
+        <div class="title">
+            <img src="img/sunrize.png" alt="作品集のアイコン">
+            <h1>Anthology</h1>
+        </div>
 
-    <div class="works-grid">
-        <div class="card">
-            <a href="work_1.html"><img class="work_icon" src="img/game.png" alt="tkinterシューティングゲーム"></a>
-            <p>pythonのtkinterで作成しました。</p>
-            <p>シューティングゲームを作りました。</p>
-        </div>
-        <div class="card">
-            <a href="work_2.html"><img src="img/bookshelf.png" alt="tkinter図書管理アプリ"></a>
-            <p>pythonのtkinterで作成しました。</p>
-            <p>図書管理アプリを作成しました。</p>
-        </div>
-        <div class="card">
-            <a href="work_3.html"><img src="img/night.png" alt="ポートフォリオ"></a>
-            <p>授業で作成したポートフォリオです。</p>
-            <p>今まで作った作品をまとめました</p>
-        </div>
-        <div class="card">
-            <a href="work_4.html"><img src="img/fountain_pen.png" alt="ハッカソンタスク管理アプリ"></a>
-            <div class="hover">
+        <!-- 作品カード一覧 -->
+        <div class="works-grid">
+            <div class="card">
+                <div class="icon-row">
+                    <a href="work_1.html"><img src="img/game.png" alt="tkinterシューティングゲーム"></a>
+                    <a href="work_1.html"><img src="img/arrow.png" alt="矢印アイコン"></a>
+                </div>
+                <h3>シューティングゲーム</h3>
+                <p>pythonのtkinterで作成しました。</p>
+                <p>シューティングゲームを作りました。</p>
+            </div>
+
+            <div class="card">
+                <div class="icon-row">
+                    <a href="work_2.html"><img src="img/bookshelf.png" alt="図書管理アプリ"></a>
+                    <a href="work_2.html"><img src="img/arrow.png" alt="矢印アイコン"></a>
+                </div>
+                <h3>図書館管理アプリ</h3>
+                <p>pythonのtkinterで作成しました。</p>
+                <p>図書管理アプリを作成しました。</p>
+            </div>
+
+            <div class="card">
+                <div class="icon-row">
+                    <a href="work_3.html"><img src="img/night.png" alt="ポートフォリオ"></a>
+                    <a href="work_3.html"><img src="img/arrow.png" alt="矢印アイコン"></a>
+                </div>
+                <h3>ポートフォリオ</h3>
+                <p>授業で作成したポートフォリオです。</p>
+                <p>今まで作った作品をまとめました</p>
+            </div>
+
+            <div class="card">
+                <div class="icon-row">
+                    <a href="work_4.html"><img src="img/fountain_pen.png" alt="タスク管理アプリ"></a>
+                    <a href="work_4.html"><img src="img/arrow.png" alt="矢印アイコン"></a>
+                </div>
+                <h3>タスク管理アプリ</h3>
                 <p>ハッカソンで作成したタスク管理アプリです。</p>
                 <p>pythonのtkinterで作成しました。</p>
             </div>
-        </div>
-        <div class="card">
-            <a href="work_5.html"><img src="img/snow.png" alt="ホテルの予約管理アプリ"></a>
-            <p>ホテルの予約管理アプリです</p>
-            <p>チーム開発の演習で作りました</p>
-        </div>
-        <div class="card">
-            <a href="#"><img src="img/leaf.png" alt="今後の作品"></a>
-            <p>次に作った作品を入れる予定です。</p>
-            <p>&nbsp;</p>
-        </div>
-    </div>
-    </div>
 
-    <!-- ページtopに戻るボタン -->
-    <div id="page_top">
-        <a href="#" class="back-to-top"><img src="img/white_petal.png" alt="トップに戻る"></a>
-        <p>page_top</p>
-    </div>
-    <script src="menu.js"></script>
-</body>
+            <div class="card">
+                <div class="icon-row">
+                    <a href="work_5.html"><img src="img/snow.png" alt="ホテルの予約管理アプリ"></a>
+                    <a href="work_5.html"><img src="img/arrow.png" alt="矢印アイコン"></a>
+                </div>
+                <h3>ホテルの予約管理アプリ</h3>
+                <p>ホテルの予約管理アプリです</p>
+                <p>短期のチーム開発の演習で作りました</p>
+            </div>
+
+            <div class="card">
+                <div class="icon-row">
+                    <a href="#"><img src="img/leaf.png" alt="次回作品"></a>
+                </div>
+                <h3>次回以降作成予定</h3>
+                <p>次に作った作品を入れる予定です。</p>
+                <p>&nbsp;</p>
+            </div>
+        </div>
+
+        <!-- ページトップ -->
+        <div id="page_top">
+            <a href="#" class="back-to-top"><img src="img/white_petal.png" alt="トップに戻る"></a>
+            <p>page_top</p>
+        </div>
+        <footer>
+            <div class="contact">
+                <p>Contact：</p>
+                <a href="a.seki.sys24@morijyobi.ac.jp">a.seki.sys24@morijyobi.ac.jp</a>
+            </div>
+        </footer>
+
+        <script src="menu.js"></script>
+    </body>
 
 </html>

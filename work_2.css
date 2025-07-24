@@ -169,6 +169,22 @@ div {
     font-weight: bold;
 }
 
+footer {
+    background-color: #D4C1A4;
+    display: flex;
+    color: #6C584C;
+    font-size: 20px;
+    text-decoration: none;
+    padding: 20px;
+    padding-left: 10%;
+}
+
+footer a {
+    text-decoration: none;
+    color: #6C584C;
+}
+
+
 /* ===== スマホ対応：レスポンシブ調整 ===== */
 @media screen and (max-width: 768px) {
     .menu-content {

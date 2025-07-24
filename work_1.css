@@ -178,6 +178,22 @@ div {
     font-weight: bold;
 }
 
+footer {
+    background-color: #191970;
+    display: flex;
+    color: #f0e68c;
+    font-size: 20px;
+    text-decoration: none;
+    padding: 20px;
+    padding-left: 10%;
+}
+
+footer a {
+    text-decoration: none;
+    color: #f0e68c;
+}
+
+
 @media screen and (max-width: 768px) {
 
     .menu-content {

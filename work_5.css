@@ -177,6 +177,21 @@ div {
     font-weight: bold;
 }
 
+footer {
+    background-color: #B8E1FF;
+    display: flex;
+    color: #2F4858;
+    font-size: 20px;
+    text-decoration: none;
+    padding: 20px;
+    padding-left: 10%;
+}
+
+footer a {
+    text-decoration: none;
+    color: #2F4858;
+}
+
 /* ===== スマホ対応：レスポンシブ調整 ===== */
 @media screen and (max-width: 768px) {
     .menu-content {

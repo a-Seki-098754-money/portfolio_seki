@@ -102,7 +102,7 @@ body {
 /* ハンバーガーメニュー終わり */
 .title {
     display: flex;
-    margin: 0px 5px 5px 30px;
+    margin: 30px 5px 5px 30px;
 }
 
 .title img {
@@ -151,11 +151,13 @@ h1 {
 /* 作品アイコン */
 .card img {
     width: 60px;
-    margin-bottom: 10px;
+    margin-bottom: 0;
+    /* 必要なら上書き */
+
 }
 
 .card p {
-    text-align: left;
+    text-align: center;
 }
 
 #page_top {
@@ -171,6 +173,44 @@ h1 {
     margin: 0 auto;
 }
 
+/* 横並びにする画像エリア */
+.icon-row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 12px;
+}
+
+.icon-row img {
+    width: 60px;
+    height: auto;
+}
+
+
+/* ホバー時の挙動 */
+.card a img:hover {
+    filter: invert(50%) sepia(100%) hue-rotate(180deg);
+}
+
+footer {
+    background-color: #355c7d;
+    display: flex;
+    color: #fff;
+    font-size: 20px;
+    text-decoration: none;
+    padding: 20px;
+    padding-left: 10%;
+}
+
+footer a {
+    text-decoration: none;
+    color: #fff;
+}
+
+
+
+
 @media screen and (max-width: 900px) {
     .works-grid {
         grid-template-columns: repeat(2, 1fr);
@@ -180,5 +220,65 @@ h1 {
 @media screen and (max-width: 600px) {
     .works-grid {
         grid-template-columns: 1fr;
+    }
+}
+
+@media screen and (max-width: 768px) {
+
+    /* メニュー本体のサイズと開閉挙動 */
+    .menu-content {
+        width: 80%;
+        left: 100%;
+    }
+
+    .menu-content.open {
+        left: 20%;
+    }
+
+    .menu-content ul {
+        padding: 60px 10px 0;
+    }
+
+    .menu-content ul li a {
+        font-size: 18px;
+        padding: 10px;
+    }
+
+    .work-link {
+        font-size: 12px;
+        padding-left: 15px;
+    }
+
+    /* ハンバーガーボタンをやや小さく */
+    .menu-btn {
+        height: 50px;
+        width: 50px;
+        top: 10px;
+        right: 10px;
+    }
+
+    .menu-btn span,
+    .menu-btn span::before,
+    .menu-btn span::after {
+        width: 20px;
+    }
+
+    /* タイトル表示をスマホに合わせる */
+    .title {
+        flex-direction: column;
+        align-items: flex-start;
+        margin: 20px;
+    }
+
+    .title img {
+        width: 40px;
+        height: auto;
+        margin-left: 0;
+        margin-bottom: 10px;
+    }
+
+    h1 {
+        font-size: 1.5rem;
+        margin-left: 0;
     }
 }
