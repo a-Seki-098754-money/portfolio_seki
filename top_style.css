@@ -1,28 +1,19 @@
 @charset "utf-8";
 
 /* フォント設定 */
-html,
-body {
+html, body {
     height: 100%;
     margin: 0;
     padding: 0;
 }
 
-html,
-body {
-    height: 100%;
-    margin: 0;
-    padding: 0;
-    overflow-x: hidden;
-}
 
 .wrapper {
     min-height: 100%;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    padding-bottom: 80px;
-    /* フッターの高さと同じくらいの余白 */
+    /* padding-bottom: 80px; */
 }
 
 
@@ -196,10 +187,10 @@ footer {
     font-size: 30px;
     text-decoration: none;
     padding-left: 10%;
-    position: relative;
-    /* bottom: 0; */
+    position: absolute;
+    bottom: 0;
     width: 100%;
-    z-index: 5;
+    height: 80px;
 }
 
 footer a {
@@ -210,7 +201,7 @@ footer a {
 .menu {
     display: flex;
     justify-content: center;
-    gap: 2rem;
+    /* gap: 2rem; */
     padding: 1rem;
     /* 半透明の背景 */
     background-color: rgba(57, 38, 97, 0.6);
@@ -230,21 +221,4 @@ footer a {
 
 .menu a:hover {
     color: #ffc0cb;
-}
-
-@media screen and (max-width: 768px) {
-    footer {
-        flex-direction: column;
-        font-size: 20px;
-        padding: 1rem;
-    }
-
-    .menu-content {
-        width: 70%;
-        left: 100%;
-    }
-
-    .menu-content.open {
-        left: 30%;
-    }
 }
