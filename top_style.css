@@ -149,6 +149,8 @@ body::before {
     padding-left: 20px;
 }
 
+/* ハンバーガーメニュー終わり */
+
 header {
     display: flex;
     justify-content: center;
@@ -236,16 +238,6 @@ footer a {
         padding: 0;
     }
 
-    .title {
-        flex-direction: column;
-        align-items: flex-start;
-        margin: 20px;
-    }
-
-    .title img {
-        width: 40px;
-        margin-bottom: 10px;
-    }
 
     .menu-content {
         width: 100%;
@@ -256,40 +248,14 @@ footer a {
         left: 0;
     }
 
-    .section-box {
-        width: 90%;
-        padding: 20px;
-    }
-
-    .timeline {
-        padding-left: 20px;
-        margin: 1rem auto;
-    }
-
-    .content {
-        padding: 20px;
-        margin-bottom: 2rem;
-    }
-
-    h1,
-    .content h2 {
-        font-size: 1.2rem;
-    }
-
-    #page_top {
-        padding-left: 0;
-        right: 10px;
-        bottom: 10px;
-    }
-
-    #page_top img {
-        width: 40px;
-    }
 
     footer {
         flex-direction: column;
         align-items: center;
         font-size: 16px;
         padding: 10px;
+        position: absolute;
+        bottom: 0;
+
     }
 }
