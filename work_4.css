@@ -180,7 +180,7 @@ div {
 footer {
     background-color: #A9746E;
     display: flex;
-    color: #6C584C;
+    color: #444444;
     font-size: 20px;
     text-decoration: none;
     padding: 20px;
@@ -189,7 +189,7 @@ footer {
 
 footer a {
     text-decoration: none;
-    color: #6C584C;
+    color: #444444;
 }
 
 
