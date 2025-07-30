@@ -1,19 +1,27 @@
 @charset "utf-8";
 
 /* フォント設定 */
-html, body {
+html,
+body {
     height: 100%;
     margin: 0;
     padding: 0;
 }
 
+html,
+body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
 
 .wrapper {
     min-height: 100%;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    /* padding-bottom: 80px; */
+    padding-bottom: 80px;
+    /* フッターの高さと同じくらいの余白 */
 }
 
 
@@ -190,7 +198,6 @@ footer {
     position: absolute;
     bottom: 0;
     width: 100%;
-    height: 80px;
 }
 
 footer a {
@@ -201,7 +208,7 @@ footer a {
 .menu {
     display: flex;
     justify-content: center;
-    /* gap: 2rem; */
+    gap: 2rem;
     padding: 1rem;
     /* 半透明の背景 */
     background-color: rgba(57, 38, 97, 0.6);
@@ -221,4 +228,68 @@ footer a {
 
 .menu a:hover {
     color: #ffc0cb;
+}
+
+@media screen and (max-width: 788px) {
+    body {
+        font-size: 14px;
+        padding: 0;
+    }
+
+    .title {
+        flex-direction: column;
+        align-items: flex-start;
+        margin: 20px;
+    }
+
+    .title img {
+        width: 40px;
+        margin-bottom: 10px;
+    }
+
+    .menu-content {
+        width: 100%;
+        left: 100%;
+    }
+
+    .menu-content.open {
+        left: 0;
+    }
+
+    .section-box {
+        width: 90%;
+        padding: 20px;
+    }
+
+    .timeline {
+        padding-left: 20px;
+        margin: 1rem auto;
+    }
+
+    .content {
+        padding: 20px;
+        margin-bottom: 2rem;
+    }
+
+    h1,
+    .content h2 {
+        font-size: 1.2rem;
+    }
+
+    #page_top {
+        padding-left: 0;
+        right: 10px;
+        bottom: 10px;
+    }
+
+    #page_top img {
+        width: 40px;
+    }
+
+    footer {
+        flex-direction: column;
+        align-items: center;
+        font-size: 16px;
+        padding: 10px;
+    }
 }
